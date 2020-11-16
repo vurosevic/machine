@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="machineapp" />
+        <module name="machinecommon" />
+        <module name="machinenn" />
+        <module name="machinepersistence" />
+        <module name="machineserver" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="machine_app" target="1.8" />
+      <module name="machine_common" target="1.8" />
+      <module name="machine_nn" target="1.8" />
+      <module name="machine_persistence" target="1.8" />
+      <module name="machine_server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="machine" options="-parameters" />
+      <module name="machine_app" options="-parameters" />
+      <module name="machine_common" options="-parameters" />
+      <module name="machine_nn" options="-parameters" />
+      <module name="machine_persistence" options="-parameters" />
+      <module name="machine_server" options="-parameters" />
+      <module name="machineapp" options="-parameters" />
+      <module name="machinecommon" options="-parameters" />
+      <module name="machinenn" options="-parameters" />
+      <module name="machinepersistence" options="-parameters" />
+      <module name="machineserver" options="-parameters" />
+    </option>
+  </component>
+</project>
