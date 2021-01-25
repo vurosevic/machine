@@ -13,4 +13,6 @@ public interface ExperimentRepository extends CrudRepository<Experiment, Long> {
     List<Experiment> findAll();
 
     List<Experiment> findByExperimentStatusId(Long id);
+
+    List<Experiment> findByProjectId(Long id);
 }

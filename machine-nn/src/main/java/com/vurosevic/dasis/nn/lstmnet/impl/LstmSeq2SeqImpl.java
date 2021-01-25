@@ -6,7 +6,7 @@ import com.vurosevic.dasis.app.service.CrossValidationService;
 import com.vurosevic.dasis.app.service.DataPreparationService;
 import com.vurosevic.dasis.app.service.ExperimentResultService;
 import com.vurosevic.dasis.app.service.InputPreparationService;
-import com.vurosevic.dasis.nn.lstmnet.LstmNet;
+import com.vurosevic.dasis.nn.lstmnet.LstmSeq2Seq;
 import com.vurosevic.dasis.nn.lstmnet.config.ConfigRecord;
 import com.vurosevic.dasis.nn.lstmnet.exception.ExperimentNotSetException;
 import lombok.extern.slf4j.Slf4j;
@@ -15,11 +15,16 @@ import org.datavec.api.records.reader.impl.csv.CSVSequenceRecordReader;
 import org.datavec.api.split.NumberedFileInputSplit;
 import org.deeplearning4j.datasets.datavec.SequenceRecordReaderDataSetIterator;
 import org.deeplearning4j.nn.api.OptimizationAlgorithm;
+import org.deeplearning4j.nn.conf.ComputationGraphConfiguration;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.deeplearning4j.nn.conf.NeuralNetConfiguration;
+import org.deeplearning4j.nn.conf.graph.rnn.DuplicateToTimeSeriesVertex;
+import org.deeplearning4j.nn.conf.graph.rnn.LastTimeStepVertex;
+import org.deeplearning4j.nn.conf.inputs.InputType;
 import org.deeplearning4j.nn.conf.layers.DenseLayer;
 import org.deeplearning4j.nn.conf.layers.LSTM;
 import org.deeplearning4j.nn.conf.layers.RnnOutputLayer;
+import org.deeplearning4j.nn.graph.ComputationGraph;
 import org.deeplearning4j.nn.multilayer.MultiLayerNetwork;
 import org.deeplearning4j.nn.weights.WeightInit;
 import org.deeplearning4j.util.ModelSerializer;
@@ -44,7 +49,7 @@ import static com.vurosevic.dasis.app.enums.PrefixCsv.LABEL;
 
 @Slf4j
 @Service
-public class LstmNetImpl implements LstmNet {
+public class LstmSeq2SeqImpl implements LstmSeq2Seq {
 
     @Autowired
     private InputPreparationService inputPreparationService;
@@ -73,7 +78,7 @@ public class LstmNetImpl implements LstmNet {
     private DataSet validationData;
     private DataSet testData;
     private DataNormalization normalizer;
-    private MultiLayerNetwork net;
+    private ComputationGraph net;
     private int epoch;
     private String modelFileName;
     private int batchSize;
@@ -81,7 +86,7 @@ public class LstmNetImpl implements LstmNet {
     private INDArray validateFeaturesAll;
     private INDArray validateLabelsAll;
 
-    public LstmNetImpl() {
+    public LstmSeq2SeqImpl() {
         learningRate = 0.0015; //0.015
         updater = new Adam(learningRate);
         trainingData = null;
@@ -100,33 +105,6 @@ public class LstmNetImpl implements LstmNet {
 
     public void setExperimentDto(ExperimentDto experimentDto) {
         this.experimentDto = experimentDto;
-    }
-
-    private Double calculateAvgMapeForValidatingDataSet() {
-        inputPreparationService.setLength(experimentDto.getNumInputs());
-
-        double mapeSum=0.0;
-        Integer count = 0;
-
-        for (int offsetAll = 0; offsetAll<validateFeaturesAll.size(2); offsetAll++) {
-
-            // preparing input vector with history data of NUM_INPUTS hours
-            for (int i = 0; i < experimentDto.getNumInputs(); i++) {
-                inputPreparationService.push(validateFeaturesAll.getDouble(1, Long.valueOf(i), offsetAll));
-            }
-
-            double mapeAll = 0.0;
-            double[] predict = predict(inputPreparationService.getInputData());
-
-            for (int i = 0; i < experimentDto.getNumOutputs(); i++) {
-                double label = validateLabelsAll.getDouble(1, Long.valueOf(i), offsetAll);
-                double mape = Math.abs(predict[i] - label) / label * 100;
-                mapeAll += mape;
-            }
-            mapeSum += mapeAll / experimentDto.getNumOutputs();
-            count++;
-        }
-        return mapeSum/count;
     }
 
     @Override
@@ -166,30 +144,6 @@ public class LstmNetImpl implements LstmNet {
     }
 
     @Override
-    public void test(int offset) {
-        INDArray testFeatures = getTestFeatures();
-        inputPreparationService.setLength(experimentDto.getNumInputs());
-
-        // preparing input vector with history data of NUM_INPUTS hours
-        for (int i = 0; i< experimentDto.getNumInputs(); i++) {
-            inputPreparationService.push(testFeatures.getDouble(Long.valueOf(i)+offset));
-        }
-
-        INDArray testLabels = getTestLabels();
-        double mape = 0.0;
-        log.info("-------------");
-        for (int i = 0; i< experimentDto.getNumInputs(); i++) {
-            double predict = predict(inputPreparationService.getInputData())[0];
-            double label = testLabels.getDouble(Long.valueOf(i)+offset);
-            mape += Math.abs(predict-label)/label*100;
-            log.info("Hour " + i + " :" + predict + ",  " + label + ", MAPE=" + Math.abs(predict - label) / label * 100);
-            inputPreparationService.push(predict);
-        }
-        log.info("-------------");
-        log.info("Average MAPE for test inputs: " + mape / experimentDto.getNumHour());
-    }
-
-    @Override
     public void trainNetwork(int epoch) {
         setEpoch(epoch);
         trainNetwork();
@@ -205,69 +159,68 @@ public class LstmNetImpl implements LstmNet {
     }
 
     @Override
-    public MultiLayerConfiguration getLstmNetworkConfiguration() {
-        NeuralNetConfiguration.Builder builder = new NeuralNetConfiguration.Builder();
-        builder.seed(123);
-        builder.biasInit(0);
-        builder.miniBatch(true);
-        builder.updater(updater);
-        builder.weightInit(WeightInit.XAVIER);
-        builder.optimizationAlgo(OptimizationAlgorithm.STOCHASTIC_GRADIENT_DESCENT);
-        builder.l2(0.0001);
+    public ComputationGraphConfiguration getLstmNetworkConfiguration() {
 
-        NeuralNetConfiguration.ListBuilder listBuilder = builder.list();
+        return new NeuralNetConfiguration.Builder()
+                .weightInit(WeightInit.XAVIER)
+                .updater(new Adam(0.25))
+                .seed(42)
+                .graphBuilder()
+                .addInputs("input") //can use any label for this
+                .addLayer("L1", new LSTM.Builder().nIn(experimentDto.getNumInputs()).nOut(HIDDEN_LAYER_WIDTH).build(), "input")
+                .addLayer("L2", new LSTM.Builder().nIn(HIDDEN_LAYER_WIDTH).nOut(HIDDEN_LAYER_WIDTH).build(), "L1")
+                .addLayer("L3", new DenseLayer.Builder().nIn(HIDDEN_LAYER_WIDTH).nOut(HIDDEN_LAYER_WIDTH).build(), "L2")
+                .addLayer("L4",new RnnOutputLayer.Builder().nIn(HIDDEN_LAYER_WIDTH).nOut(experimentDto.getNumOutputs()).build(), "L3")
+                .setOutputs("L4")
+                .build();
 
-        for (int i = 0; i < HIDDEN_LAYER_CONT; i++) {
-            LSTM.Builder hiddenLayerBuilder = new LSTM.Builder();
-            hiddenLayerBuilder.nIn(i == 0 ? experimentDto.getNumInputs() : HIDDEN_LAYER_WIDTH);
-            hiddenLayerBuilder.nOut(HIDDEN_LAYER_WIDTH);
-            hiddenLayerBuilder.activation(Activation.TANH);
-            hiddenLayerBuilder.weightInit(WeightInit.XAVIER);
-            listBuilder.layer(i, hiddenLayerBuilder.build());
-        }
 
-        listBuilder.layer(HIDDEN_LAYER_CONT, new DenseLayer.Builder()
-                .nIn(HIDDEN_LAYER_WIDTH)
-                .nOut(DENSE_LAYER_WIDTH)
-                .activation(Activation.RELU)
-                .build());
-        listBuilder.layer(HIDDEN_LAYER_CONT+1, new RnnOutputLayer.Builder()
-                .nIn(DENSE_LAYER_WIDTH)
-                .nOut(experimentDto.getNumOutputs())
-                .activation(Activation.IDENTITY)
-                .lossFunction(LossFunctions.LossFunction.MSE)
-                .build());
-
-        return listBuilder.build();
+//                .weightInit(WeightInit.XAVIER)
+//                .updater(new Adam(0.25))
+//                .seed(42)
+//                .graphBuilder()
+//                .addInputs("in_data", "last_in")
+//                .setInputTypes(InputType.recurrent(experimentDto.getNumInputs()), InputType.recurrent(experimentDto.getNumInputs()))
+//                //The inputs to the encoder will have size = minibatch x featuresize x timesteps
+//                //Note that the network only knows of the feature vector size. It does not know how many time steps unless it sees an instance of the data
+//                .addLayer("encoder", new LSTM.Builder().nIn(experimentDto.getNumInputs()).nOut(HIDDEN_LAYER_WIDTH).activation(Activation.LEAKYRELU).build(), "in_data")
+//                //Create a vertex indicating the very last time step of the encoder layer needs to be directed to other places in the comp graph
+//                .addVertex("lastTimeStep", new LastTimeStepVertex("in_data"), "encoder")
+//                //Create a vertex that allows the duplication of 2d input to a 3d input
+//                //In this case the last time step of the encoder layer (viz. 2d) is duplicated to the length of the timeseries "sumOut" which is an input to the comp graph
+//                //Refer to the javadoc for more detail
+//                .addVertex("duplicateTimeStep", new DuplicateToTimeSeriesVertex("last_in"), "lastTimeStep")
+//                //The inputs to the decoder will have size = size of output of last timestep of encoder (numHiddenNodes) + size of the other input to the comp graph,sumOut (feature vector size)
+//                .addLayer("decoder", new LSTM.Builder().nIn(experimentDto.getNumInputs() + HIDDEN_LAYER_WIDTH).nOut(HIDDEN_LAYER_WIDTH).activation(Activation.LEAKYRELU).build(), "last_in","duplicateTimeStep")
+//                .addLayer("output", new RnnOutputLayer.Builder().nIn(HIDDEN_LAYER_WIDTH).nOut(experimentDto.getNumOutputs()).activation(Activation.LEAKYRELU).lossFunction(LossFunctions.LossFunction.MSE).build(), "decoder")
+//                .setOutputs("output")
+//                .build();
     }
 
     @Override
     public void initNetwork() {
-        net = new MultiLayerNetwork(this.getLstmNetworkConfiguration());
+        net = new ComputationGraph(this.getLstmNetworkConfiguration());
         net.init();
     }
 
     @Override
-    public double calculateTestAvgMape() {
-//        net.rnnClearPreviousState();
-//        INDArray outputVal = net.rnnTimeStep(testData.getFeatures());
-//        return getMape(testData, outputVal, normalizer);
+    public Double calculateTestAvgMape() {
 
         net.rnnClearPreviousState();
-        INDArray outputVal = net.rnnTimeStep(testData.getFeatures());
+        INDArray[] outputVal = net.rnnTimeStep(testData.getFeatures());
 
         DataSet copy = testData.copy();
         INDArray lables = copy.getLabels();
         normalizer.revertLabels(lables);
-        normalizer.revertLabels(outputVal);
+        normalizer.revertLabels(outputVal[0]);
 
         double mapeAll = 0.0;
-        for (int j=0; j< outputVal.size(2); j++){
+        for (int j=0; j< outputVal[0].size(2); j++){
 
             CrossValidationResultDto crossValidationResultDto = crossValidationService.saveCrossValidationResult(experimentDto, j);
 
             for (int i = 0; i < experimentDto.getNumOutputs(); i++) {
-                double out = outputVal.getDouble(1, Long.valueOf(i), j);
+                double out = outputVal[0].getDouble(1, Long.valueOf(i), j);
                 double label = lables.getDouble(1, Long.valueOf(i), j);
                 double mape = 100*Math.abs(label-out)/label;
                 mapeAll += mape;
@@ -276,7 +229,7 @@ public class LstmNetImpl implements LstmNet {
                 log.info("AVG MAPE: {},{} -> {}",j, i, mape);
             }
         }
-        return mapeAll/outputVal.size(2)/experimentDto.getNumOutputs();
+        return mapeAll/outputVal[0].size(2)/experimentDto.getNumOutputs();
     }
 
     @Override
@@ -287,13 +240,12 @@ public class LstmNetImpl implements LstmNet {
             net.fit(trainingData);
             net.rnnClearPreviousState();
 
-            INDArray outputTr = net.rnnTimeStep(trainingData.getFeatures());
-            double mapeTr = getMape(trainingData, outputTr, normalizer);
+            INDArray[] outputTr = net.rnnTimeStep(trainingData.getFeatures());
+            double mapeTr = getMape(trainingData, outputTr[0], normalizer);
             experimentResultService.saveTrainingResult(experimentDto, ep, mapeTr);
 
-            INDArray outputVal = net.rnnTimeStep(validationData.getFeatures());
-            double mapeVal = getMape(validationData, outputVal, normalizer);
-            //double mapeVal = calculateAvgMapeForValidatingDataSet();
+            INDArray[] outputVal = net.rnnTimeStep(validationData.getFeatures());
+            double mapeVal = getMape(validationData, outputVal[0], normalizer);
 
             experimentResultService.saveValidationResult(experimentDto, ep, mapeVal);
 
@@ -313,11 +265,11 @@ public class LstmNetImpl implements LstmNet {
     public double[] predict(double[] inputArray) {
         INDArray input = Nd4j.create(inputArray, new int[]{1, experimentDto.getNumInputs()});
         normalizer.transform(input);
-        INDArray out = net.rnnTimeStep(input);
-        normalizer.revertLabels(out);
+        INDArray[] out = net.rnnTimeStep(input);
+        normalizer.revertLabels(out[0]);
         double[] result = new double[experimentDto.getNumOutputs()];
         for (int i=0; i<experimentDto.getNumOutputs(); i++)
-            result[i] = out.getDouble(i);
+            result[i] = out[0].getDouble(i);
         return result;
     }
 
@@ -361,7 +313,7 @@ public class LstmNetImpl implements LstmNet {
             try {
                 featureTrainingReader.close();
                 labelTrainingReader.close();
-            } catch (IOException|NullPointerException e) {
+            } catch (IOException |NullPointerException e) {
                 log.error(e.getMessage());
             }
         }
@@ -433,7 +385,7 @@ public class LstmNetImpl implements LstmNet {
 
     public void load(String filename) throws IOException {
         try {
-            net = ModelSerializer.restoreMultiLayerNetwork(new File(MODEL_PATH + filename));
+            net = ModelSerializer.restoreComputationGraph(new File(MODEL_PATH + filename));
         } catch (Exception e) {
             log.error(e.getMessage());
         }
@@ -448,8 +400,8 @@ public class LstmNetImpl implements LstmNet {
     }
 
     public double getCurrentMape() {
-        INDArray output = net.rnnTimeStep(testData.getFeatures());
-        return getMape(testData, output, normalizer);
+        INDArray[] output = net.rnnTimeStep(testData.getFeatures());
+        return getMape(testData, output[0], normalizer);
     }
 
     public DataSet getTrainingData() {
@@ -513,6 +465,7 @@ public class LstmNetImpl implements LstmNet {
     public void setEpoch(int epoch) {
         this.epoch = epoch;
     }
+
 
 
 }

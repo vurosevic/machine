@@ -9,7 +9,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name="de_load_entsoe")
+@Table(name="vw_load_entsoe")
 @Data
 @Builder
 @AllArgsConstructor
@@ -18,7 +18,7 @@ public class LoadEntsoe {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    @Column(name="ID", nullable=false, updatable = true)
+    @Column(name="ID", nullable=false, updatable = false)
     private Long id;
 
     @ManyToOne

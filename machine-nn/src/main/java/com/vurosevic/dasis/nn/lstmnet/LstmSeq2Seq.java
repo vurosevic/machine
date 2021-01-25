@@ -2,6 +2,7 @@ package com.vurosevic.dasis.nn.lstmnet;
 
 import com.vurosevic.dasis.app.dto.ExperimentDto;
 import com.vurosevic.dasis.nn.lstmnet.config.ConfigRecord;
+import org.deeplearning4j.nn.conf.ComputationGraphConfiguration;
 import org.deeplearning4j.nn.conf.MultiLayerConfiguration;
 import org.nd4j.linalg.api.ndarray.INDArray;
 import org.nd4j.linalg.dataset.api.DataSet;
@@ -9,11 +10,11 @@ import org.nd4j.linalg.dataset.api.preprocessor.DataNormalization;
 
 import java.io.IOException;
 
-public interface LstmNet {
+public interface LstmSeq2Seq {
 
     ExperimentDto getExperimentDto();
     void setExperimentDto(ExperimentDto experimentDto);
-    MultiLayerConfiguration getLstmNetworkConfiguration();
+    ComputationGraphConfiguration getLstmNetworkConfiguration();
     void initNetwork();
     void trainNetwork();
     void trainNetworkEarlyStopping();
@@ -27,9 +28,8 @@ public interface LstmNet {
     int getEpoch();
     void setEpoch(int epoch);
     Double calculateAvgMape();
-    void test(int offset);
     void trainNetwork(int epoch);
     void setConfig(ConfigRecord configRecord);
-    double calculateTestAvgMape();
+    Double calculateTestAvgMape();
 
 }

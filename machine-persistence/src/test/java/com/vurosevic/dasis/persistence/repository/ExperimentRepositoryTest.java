@@ -37,4 +37,18 @@ public class ExperimentRepositoryTest extends PersistenceTest{
 
     }
 
+
+    @Test
+    public void findByProjectId() {
+
+        Long PROJECT_ID = 1L;
+
+        List<Experiment> result = experimentRepository.findByProjectId(PROJECT_ID);
+
+        assertThat(result)
+                .isNotNull()
+                .isNotEmpty();
+
+    }
+
 }

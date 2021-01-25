@@ -1,12 +1,18 @@
 package com.vurosevic.dasis.persistence.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name="de_experiment_results_validation")
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class ExperimentResultsValidation {
 
     @Id
@@ -23,8 +29,5 @@ public class ExperimentResultsValidation {
 
     @Column(name="Mape", nullable=false)
     private Double mape;
-
-    @Column(name="Mape_min", nullable=false)
-    private Double mapeMin;
 
 }

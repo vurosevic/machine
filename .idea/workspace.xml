@@ -1,93 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="05f99c56-259d-4e8e-893e-194d7c6bde33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitingnore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/0154c61a8c11a46efbf6db01d55e6b950c1d715d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/1/01a487c56e20bd21fbde2cb9c99da06ee7b3b1bc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/7/07f9a08357b9420d47ab16fd038dcafcc16f4106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/087e018a9770ce9a102fd7d089b16b2804b68712" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/8/0896c8a39a3ae44f198ef07d58a03bcf89115e5a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/9/092d4c48f7cd295abd65a36762cc5475f8628a84" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/c/0c1b6e1152e51aba43e22c73213dfb4f85f7ddc3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0da490ade67f894141168ca07648b6eb54c773c6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13787a83c305ba18ba504754488e91dfd095f3ea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d3a1d46eb9f07387b55131ea87ad572e70dd958" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d6279298487ede037d0507e16962c9b5d7a3829" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24eaf14ed19a6da0e2fb3808e8e7180aa0b12a84" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/6/26e96738cefb2bc1b430a02f3037631c4ce03e43" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/e/2ea93c9d3634f48d0b0b570d5b6589ce9f990bac" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/3192f6cc9878f58a153e98701932379ff5a58da1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/5/351b852bbb539471b53bd9e6d1b4313051b6e703" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/36091760505446ac8d724309d18f8bace143d473" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/7/37b3d5eee3819118f6a31ffe44cbf493a42d0be7" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/d/3dc15322fe2b3ba96c3b5f9deaa2bb7c6b473b68" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3e5d1aec8cd90e0436dbb6fd906363751f05cb63" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/e/3eb49f819f11f25da03fcb3005a2ffd945c4eff3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/3/434411250c56b394d2f52e7ba7bb1a40ab2f3cf3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/8/4873b79e0854c0da629757f9c04b3e8eb2fac1ee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/c/4c3624bd312496af39842e71dd8ebc2d27393d6d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/1/51fd9da37e8ce50f8207458e83d5c2893d3bc8f4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/2/524309b9a99e022e67f5e9a12c16a116cd99ca67" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/541f9b8c0303681e2b7ccc91efb6318b75e4754a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/6/560b07776c0206120c142f520c56c357dd4dcde4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/597a1d34f1219d6e9045817f1c098b9be5a8db53" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/c/5c2fac428ef09743dc5f97c10b220c8b81ce6a22" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5e1e140d4a28f84c33a263d55873fab3a1e6842b" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/68356e6fb2524b775ba93aa572bc34fe915fb5c6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/d/6dda4d24fbec2640a90465916d3001db31305788" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/2/7267d22ff8e7636586108f96909865a6a0931494" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/4/7456b14bbad1bdd64398887d839488b9d95c8574" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/6/7682da80ac81476c1619731ae78589468891919e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/7/770325059d11ecb85f6c4eb60b52e81206f25240" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/d/8db92632b2a9b9225951f6ecba4d0d913f045828" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8eff92764eead6f80bdf6f299a31d73ad83d83ea" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97545100d3369ce704334967e9b21b4175c4a95a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/2/a279453f81919a259229270463e66856b8bdb73e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/8/a8d449e0f0da49933039084f0e10294e96a517f0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/a/aa58eb7915d4079149363f51cd6c7e5f643f3f21" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/2/b2a054497e476a2efbfd4d659993410cd96b5044" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/7/b75956bb59d4bee5dc88e9737d00c3a99767785c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/6/d62faad559740c051b660f36c295c900f5784932" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/8/d83a2117e8a8fa2fca6bc8f338a680cd1df09420" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da0c62fbb613d3267c845235ba241dcf262c5a76" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/c/dc715bf4928dee57862be2aaa6a3c1a151e8a5a6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/e/de4b6fed34250405f71a71fee8a7e47107ecbf70" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/f/df11f75d67582df024daf3c39e72a73de0b92242" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/0/e051f5de77dfba6bcb92cec5ddc06274a6f29fc1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/2/e2036d00b8b2d7f61b2cc1f6d561d5483329a328" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/7/e774a58d39a5fc65257fddea809d9e7a55acbde5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e860a871011b4038638cad2ff28dde45ce084622" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/d/ed6c119b3ae780e7c4e4ea7555059517083c1c4f" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2fcaa86f45234fdca3cd74df26c7c37408dc799" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/6/f6c4638832218f82997419600bc3afb7f89cbdf2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f738489c5aa97685e92e3c740117fb9454e98f38" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationDetailDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationResultDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/CrossValidationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/ExperimentResultService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/CrossValidationServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/ExperimentResultServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/dto/CrossValidationDetailDto$CrossValidationDetailDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/dto/CrossValidationDetailDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/dto/CrossValidationResultDto$CrossValidationResultDtoBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/dto/CrossValidationResultDto.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/CrossValidationService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/ExperimentResultService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/impl/CrossValidationServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/impl/ExperimentResultServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmSeq2Seq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmSeq2SeqImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/ExperimentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/impl/ExperimentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/LstmSeq2Seq.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/impl/LstmSeq2SeqImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/service/ExperimentService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/service/impl/ExperimentServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationDetailsRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationResultRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/META-INF/machinepersistence.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/CrossValidationDetail$CrossValidationDetailBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/CrossValidationDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/CrossValidationResult$CrossValidationResultBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/CrossValidationResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTest$ExperimentResultsTestBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining$ExperimentResultsTrainingBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation$ExperimentResultsValidationBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/repository/CrossValidationDetailsRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/repository/CrossValidationResultRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/machine-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-app/target/classes/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-nn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/machine-nn/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/LstmNet.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/LstmNet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-nn/target/classes/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/LoadEntsoe.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/model/LoadEntsoe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/repository/ExperimentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/classes/com/vurosevic/dasis/persistence/repository/ExperimentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-persistence/target/test-classes/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-persistence/target/test-classes/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine-server/target/classes/com/vurosevic/dasis/server/app/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/machine-server/target/classes/com/vurosevic/dasis/server/app/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/machine_nn/target/" />
-    <ignored path="$PROJECT_DIR$/machine_app/target/" />
-    <ignored path="$PROJECT_DIR$/machine_persistence/target/" />
-    <ignored path="$PROJECT_DIR$/machine_common/target/" />
-    <ignored path="$PROJECT_DIR$/machine_server/target/" />
-    <ignored path="$PROJECT_DIR$/machine-persistence/target/" />
-    <ignored path="$PROJECT_DIR$/machine-common/target/" />
-    <ignored path="$PROJECT_DIR$/machine-app/target/" />
-    <ignored path="$PROJECT_DIR$/machine-nn/target/" />
     <ignored path="$PROJECT_DIR$/machine-server/target/" />
+    <ignored path="$PROJECT_DIR$/machine-common/target/" />
+    <ignored path="$PROJECT_DIR$/machine-nn/target/" />
+    <ignored path="$PROJECT_DIR$/machine-app/target/" />
+    <ignored path="$PROJECT_DIR$/machine-persistence/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#726#727#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="301" column="164" selection-start-line="301" selection-start-column="164" selection-end-line="301" selection-end-column="164" />
+            <state relative-caret-position="132">
+              <caret line="46" column="35" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8475#8476#0" expanded="true" />
-                <element signature="e#8532#8533#0" expanded="true" />
-                <element signature="e#14384#14385#0" expanded="true" />
-                <element signature="e#14419#14420#0" expanded="true" />
-                <element signature="e#15995#15996#0" expanded="true" />
-                <element signature="e#16023#16024#0" expanded="true" />
-                <element signature="e#16061#16062#0" expanded="true" />
-                <element signature="e#16095#16096#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/enums/PrefixCsv.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/InputPreparationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="638">
-              <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#3680#3681#0" expanded="true" />
+                <element signature="e#3716#3717#0" expanded="true" />
+                <element signature="e#12052#12053#0" expanded="true" />
+                <element signature="e#12109#12110#0" expanded="true" />
+                <element signature="e#18190#18191#0" expanded="true" />
+                <element signature="e#18225#18226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,7 +172,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/app/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
+            <state relative-caret-position="198">
               <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,38 +181,83 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nn/1.0.0-beta4/deeplearning4j-nn-1.0.0-beta4-sources.jar!/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="2251" selection-start-line="2251" selection-end-line="2251" />
+            <state relative-caret-position="89">
+              <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine-server/pom.xml">
+        <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/ExperimentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="20">
-              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+            <state relative-caret-position="198">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/machine-nn/pom.xml">
+        <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmSeq2Seq.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1879">
-              <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
+            <state relative-caret-position="594">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/impl/ExperimentServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
+            <state relative-caret-position="242">
+              <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmSeq2SeqImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3652">
+              <caret line="215" selection-start-line="215" selection-end-line="215" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-api/1.0.0-beta7/nd4j-api-1.0.0-beta7.jar!/org/nd4j/linalg/dataset/api/DataSet.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,6 +279,13 @@
       <find>MODEL_PATH</find>
       <find>trainingData</find>
       <find>iteratorTraining</find>
+      <find>beta4</find>
+      <find>javacpp</find>
+      <find>getMape</find>
+      <find>getExperimentDto</find>
+      <find>trainNetworkEarlyStopping</find>
+      <find>getLstmNetworkConfiguration</find>
+      <find>calculateAvgMapeForValidatingDataSet</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -166,30 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/machine_persistence/pom.xml" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CountryRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/PersistenceTest.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentStatus.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ModelRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ProjectRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentStatusRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentStatusRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsValidationRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsTestRepository.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsTrainingRepository.java" />
-        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationService.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/CountryRepositoryTest.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Country.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java" />
-        <option value="$PROJECT_DIR$/machine-app/pom.xml" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/app/App.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Experiment.java" />
-        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Model.java" />
         <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Project.java" />
         <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/InputPreparationService.java" />
         <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/InputPreparationServiceImpl.java" />
@@ -203,33 +307,63 @@
         <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/LoadEntsoeRepositoryTest.java" />
         <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/exception/ExperimentNotSetException.java" />
         <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/config/ConfigRecord.java" />
-        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java" />
         <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/app/App.java" />
         <option value="$PROJECT_DIR$/machine-app/src/test/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImplTest.java" />
         <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/app/App.java" />
         <option value="$PROJECT_DIR$/machine-persistence/pom.xml" />
         <option value="$PROJECT_DIR$/machine-server/pom.xml" />
-        <option value="$PROJECT_DIR$/machine-nn/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java" />
         <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/enums/PrefixCsv.java" />
-        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/ExperimentResultService.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/ExperimentResultServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationResultRepository.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossVaalidationDetailsRepository.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationDetailsRepository.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationDetailDto.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationDetail.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationResultDto.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/CrossValidationService.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/CrossValidationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationResult.java" />
+        <option value="$PROJECT_DIR$/machine-nn/pom.xml" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/ExperimentService.java" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/ExperimentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/machine-app/pom.xml" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java" />
         <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java" />
+        <option value="$PROJECT_DIR$/machine-persistence/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/LstmSeq2Seq.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmSeq2SeqImpl.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmSeq2Seq.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/ExperimentService.java" />
+        <option value="$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/impl/ExperimentServiceImpl.java" />
+        <option value="$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="854" />
-    <option name="y" value="24" />
-    <option name="width" value="976" />
-    <option name="height" value="1056" />
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
   </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectId" id="1n1YyeDFUlu4zXiRr9hajSWOGIW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -291,6 +425,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="dto" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="enums" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -331,11 +485,6 @@
             <path>
               <item name="machine" type="b2602c69:ProjectViewProjectNode" />
               <item name="machine" type="462c0819:PsiDirectoryNode" />
-              <item name="machine-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="machine" type="462c0819:PsiDirectoryNode" />
               <item name="machine-nn" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -376,6 +525,47 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lstmnet" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-nn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lstmnet" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-nn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lstmnet" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-nn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lstmnet" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="machine" type="462c0819:PsiDirectoryNode" />
+              <item name="machine-nn" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lstmnet" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -504,17 +694,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1605560628791" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1611608480539" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Generali/Mastering Spring Batch/helloworld/helloworld" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3852459" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -546,7 +740,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App (2)">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vurosevic.dasis.nn.lstmnet.app.App" />
       <module name="machinenn" />
@@ -560,7 +754,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.vurosevic.dasis.server.app.App" />
       <module name="machineserver" />
       <extension name="coverage">
@@ -595,7 +789,7 @@
       <module name="machineapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vurosevic.dasis.app.service.impl.*" />
+          <option name="PATTERN" value="com.vurosevic.dasis.nn.lstmnet.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -610,7 +804,7 @@
       <module name="machineapp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.vurosevic.dasis.app.service.impl.*" />
+          <option name="PATTERN" value="com.vurosevic.dasis.nn.lstmnet.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -622,7 +816,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoadEntsoeRepositoryTest.findByCountryIdSorted" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ExperimentRepositoryTest.findByProjectId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="machinepersistence" />
       <extension name="coverage">
         <pattern>
@@ -631,30 +825,31 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.vurosevic.dasis.persistence.repository" />
-      <option name="MAIN_CLASS_NAME" value="com.vurosevic.dasis.persistence.repository.LoadEntsoeRepositoryTest" />
-      <option name="METHOD_NAME" value="findByCountryIdSorted" />
+      <option name="MAIN_CLASS_NAME" value="com.vurosevic.dasis.persistence.repository.ExperimentRepositoryTest" />
+      <option name="METHOD_NAME" value="findByProjectId" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.App (1)" />
+      <item itemvalue="Application.App" />
       <item itemvalue="JUnit.DataPreparationServiceImplTest" />
       <item itemvalue="JUnit.DataPreparationServiceImplTest.makeCsvFiles" />
-      <item itemvalue="JUnit.LoadEntsoeRepositoryTest.findByCountryIdSorted" />
-      <item itemvalue="Application.App (1)" />
-      <item itemvalue="Application.App (2)" />
+      <item itemvalue="JUnit.ExperimentRepositoryTest.findByProjectId" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App (2)" />
-        <item itemvalue="Application.App (1)" />
-        <item itemvalue="JUnit.DataPreparationServiceImplTest" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="JUnit.ExperimentRepositoryTest.findByProjectId" />
         <item itemvalue="JUnit.DataPreparationServiceImplTest.makeCsvFiles" />
-        <item itemvalue="JUnit.LoadEntsoeRepositoryTest.findByCountryIdSorted" />
+        <item itemvalue="JUnit.DataPreparationServiceImplTest" />
+        <item itemvalue="Application.App (1)" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -669,9 +864,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoadEntsoeRepositoryTest_findByCountryIdSorted - 2020.11.14 at 22h 16m 50s.xml">
-      <configuration name="LoadEntsoeRepositoryTest.findByCountryIdSorted" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="DataPreparationServiceImplTest - 2020.11.16 at 18h 38m 10s.xml">
       <configuration name="DataPreparationServiceImplTest" configurationId="JUnit" />
     </history-entry>
@@ -699,492 +891,94 @@
     <history-entry file="DataPreparationServiceImplTest - 2020.11.16 at 20h 14m 48s.xml">
       <configuration name="DataPreparationServiceImplTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExperimentRepositoryTest_findByProjectId - 2020.11.24 at 08h 16m 53s.xml">
+      <configuration name="ExperimentRepositoryTest.findByProjectId" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22068231" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="SonarLint" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32936078" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4539545" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5796316" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37486458" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.66305524" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="REPL" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Leiningen" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="SonarLint" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4496208" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.4539545" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Leiningen" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="REPL" order="9" side_tool="true" weight="0.32995737" />
     </layout>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>253</line>
-          <properties />
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>257</line>
-          <properties />
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>258</line>
-          <properties />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>260</line>
-          <properties />
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>261</line>
-          <properties />
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>263</line>
-          <properties />
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>264</line>
-          <properties />
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>270</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>271</line>
-          <properties />
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>277</line>
-          <properties />
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>278</line>
-          <properties />
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>280</line>
-          <properties />
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>281</line>
-          <properties />
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>283</line>
-          <properties />
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>284</line>
-          <properties />
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>290</line>
-          <properties />
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>291</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>297</line>
-          <properties />
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>298</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>300</line>
-          <properties />
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>301</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>302</line>
-          <properties />
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>303</line>
-          <properties />
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>320</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>321</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>322</line>
-          <properties />
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>323</line>
-          <properties />
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>324</line>
-          <properties />
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java</url>
-          <line>325</line>
-          <properties />
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>dataPreparationService.getCsvFileNameTrainigDataSet(experimentDto, FEATURE.getPrefix())</expression-string>
+        <expression-string>testData.getLabels().shape()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>outputVal.shape()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 23,6308)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 24,6308)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 23,6309)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 24,6309)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 0,25000)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 0,2500)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>testLabelsAll.getDouble(1, 0,250)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/machine_app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ModelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ProjectRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentStatusRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentStatusRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" selection-start-line="6" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="40" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsValidationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsTestRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsTrainingRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CountryRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/PersistenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Country.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="20" selection-start-line="20" selection-end-line="39" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CountryDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="20" selection-start-line="20" selection-end-line="29" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ModelDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Project.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" selection-start-line="20" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ProjectDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Experiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="21" selection-start-line="21" selection-end-line="52" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="17" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ExperimentStatusDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ExperimentDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/InputPreparationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/CountryRepositoryTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -1212,37 +1006,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/exception/ExperimentNotSetException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="38" />
-          <folding>
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/config/ConfigRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/LoadEntsoeRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -1263,75 +1026,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-persistence/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/app/App.java" />
     <entry file="file://$PROJECT_DIR$/machine-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1879">
-          <caret line="86" column="10" selection-start-line="86" selection-start-column="10" selection-end-line="86" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="88" column="19" selection-start-line="88" selection-start-column="19" selection-end-line="88" selection-end-column="19" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/deeplearning4j/deeplearning4j-nn/1.0.0-beta4/deeplearning4j-nn-1.0.0-beta4-sources.jar!/org/deeplearning4j/nn/multilayer/MultiLayerNetwork.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="2251" selection-start-line="2251" selection-end-line="2251" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/enums/PrefixCsv.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/app/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1347,42 +1049,392 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
+        <state relative-caret-position="109">
+          <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java">
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CountryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="301" column="164" selection-start-line="301" selection-start-column="164" selection-end-line="301" selection-end-column="164" />
+        <state relative-caret-position="220">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8475#8476#0" expanded="true" />
-            <element signature="e#8532#8533#0" expanded="true" />
-            <element signature="e#14384#14385#0" expanded="true" />
-            <element signature="e#14419#14420#0" expanded="true" />
-            <element signature="e#15995#15996#0" expanded="true" />
-            <element signature="e#16023#16024#0" expanded="true" />
-            <element signature="e#16061#16062#0" expanded="true" />
-            <element signature="e#16095#16096#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsValidationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentResultsTrainingRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationResultRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CountryDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/ExperimentResultServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationDetailDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/CrossValidationResultDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/CrossValidationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="7" column="105" selection-start-line="7" selection-start-column="105" selection-end-line="7" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/CrossValidationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="28" column="25" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1914">
+          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1034">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/ExperimentResultService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="7" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/ExperimentRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ExperimentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/test/java/com/vurosevic/dasis/persistence/repository/ExperimentRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/dto/ExperimentStatusDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1408">
+          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/LoadEntsoe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/repository/CrossValidationDetailsRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/CrossValidationResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/Experiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-persistence/src/main/java/com/vurosevic/dasis/persistence/model/ExperimentResultsTraining.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/service/impl/DataPreparationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/config/ConfigRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/exception/ExperimentNotSetException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/enums/PrefixCsv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="23" lean-forward="true" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmNetImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="46" column="35" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3680#3681#0" expanded="true" />
+            <element signature="e#3716#3717#0" expanded="true" />
+            <element signature="e#12052#12053#0" expanded="true" />
+            <element signature="e#12109#12110#0" expanded="true" />
+            <element signature="e#18190#18191#0" expanded="true" />
+            <element signature="e#18225#18226#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-app/src/main/java/com/vurosevic/dasis/app/app/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="22" selection-start-line="22" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/ExperimentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmSeq2Seq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/service/impl/ExperimentServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/impl/LstmSeq2SeqImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3652">
+          <caret line="215" selection-start-line="215" selection-end-line="215" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/nd4j/nd4j-api/1.0.0-beta7/nd4j-api-1.0.0-beta7.jar!/org/nd4j/linalg/dataset/api/DataSet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/machine-nn/src/main/java/com/vurosevic/dasis/nn/lstmnet/LstmNet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="32" column="24" selection-start-line="32" selection-start-column="24" selection-end-line="32" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/machine-server/src/main/java/com/vurosevic/dasis/server/app/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="62" column="4" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="89">
+          <caret line="60" column="6" selection-start-line="60" selection-start-column="6" selection-end-line="60" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#664#665#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
           </folding>
         </state>
       </provider>

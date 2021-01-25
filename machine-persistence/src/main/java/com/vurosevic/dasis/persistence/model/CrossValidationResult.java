@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
-@Table(name="de_experiment_results_test")
+@Table(name="de_cross_validation_results")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class ExperimentResultsTest {
+public class CrossValidationResult {
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
@@ -24,10 +24,7 @@ public class ExperimentResultsTest {
     @JoinColumn(name = "Experiment_fk")
     private Experiment experiment;
 
-    @Column(name="Epoch", nullable=false)
-    private Integer epoch;
-
-    @Column(name="Mape", nullable=false)
-    private Double mape;
+    @Column(name="Ordinal_number", nullable=false)
+    private Integer ordinalNumber;
 
 }

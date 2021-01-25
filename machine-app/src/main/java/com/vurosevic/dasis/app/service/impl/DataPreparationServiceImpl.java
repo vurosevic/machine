@@ -18,8 +18,8 @@ import static com.vurosevic.dasis.app.enums.PrefixCsv.LABEL;
 @Service
 public class DataPreparationServiceImpl implements DataPreparationService {
 
-    private static final Double TRAINING_DATA_SET_PERCENT = 0.60;
-    private static final Double VALIDATION_DATA_SET_PERCENT = 0.20;
+    private static final Double TRAINING_DATA_SET_PERCENT = 0.80; //0.60
+    private static final Double VALIDATION_DATA_SET_PERCENT = 0.10; // 0.20
 
     private static final String START_PATH = "D:\\machine\\data\\";
 
