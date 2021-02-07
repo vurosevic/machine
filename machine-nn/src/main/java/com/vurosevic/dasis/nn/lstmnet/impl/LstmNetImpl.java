@@ -43,7 +43,7 @@ import static com.vurosevic.dasis.app.enums.PrefixCsv.FEATURE;
 import static com.vurosevic.dasis.app.enums.PrefixCsv.LABEL;
 
 @Slf4j
-@Service
+@Service("LstmNetImpl")
 public class LstmNetImpl implements LstmNet {
 
     @Autowired
@@ -78,9 +78,6 @@ public class LstmNetImpl implements LstmNet {
     private String modelFileName;
     private int batchSize;
 
-    private INDArray validateFeaturesAll;
-    private INDArray validateLabelsAll;
-
     public LstmNetImpl() {
         learningRate = 0.0015; //0.015
         updater = new Adam(learningRate);
@@ -94,105 +91,14 @@ public class LstmNetImpl implements LstmNet {
         experimentDto = null;
     }
 
+    @Override
     public ExperimentDto getExperimentDto() {
         return experimentDto;
     }
 
+    @Override
     public void setExperimentDto(ExperimentDto experimentDto) {
         this.experimentDto = experimentDto;
-    }
-
-    private Double calculateAvgMapeForValidatingDataSet() {
-        inputPreparationService.setLength(experimentDto.getNumInputs());
-
-        double mapeSum=0.0;
-        Integer count = 0;
-
-        for (int offsetAll = 0; offsetAll<validateFeaturesAll.size(2); offsetAll++) {
-
-            // preparing input vector with history data of NUM_INPUTS hours
-            for (int i = 0; i < experimentDto.getNumInputs(); i++) {
-                inputPreparationService.push(validateFeaturesAll.getDouble(1, Long.valueOf(i), offsetAll));
-            }
-
-            double mapeAll = 0.0;
-            double[] predict = predict(inputPreparationService.getInputData());
-
-            for (int i = 0; i < experimentDto.getNumOutputs(); i++) {
-                double label = validateLabelsAll.getDouble(1, Long.valueOf(i), offsetAll);
-                double mape = Math.abs(predict[i] - label) / label * 100;
-                mapeAll += mape;
-            }
-            mapeSum += mapeAll / experimentDto.getNumOutputs();
-            count++;
-        }
-        return mapeSum/count;
-    }
-
-    @Override
-    public Double calculateAvgMape() {
-        INDArray testFeaturesAll = getTestFeatures();
-        INDArray testLabelsAll = getTestLabels();
-        inputPreparationService.setLength(experimentDto.getNumInputs());
-
-        double mapeSum=0.0;
-        Integer count = 0;
-
-        for (int offsetAll = 0; offsetAll<testFeaturesAll.size(2); offsetAll++) {
-
-            // preparing input vector with history data of NUM_INPUTS hours
-            for (int i = 0; i < experimentDto.getNumInputs(); i++) {
-                inputPreparationService.push(testFeaturesAll.getDouble(1, Long.valueOf(i), offsetAll));
-            }
-
-            double mapeAll = 0.0;
-            double[] predict = predict(inputPreparationService.getInputData());
-
-            CrossValidationResultDto crossValidationResultDto = crossValidationService.saveCrossValidationResult(experimentDto, count);
-
-            for (int i = 0; i < experimentDto.getNumOutputs(); i++) {
-                double label = testLabelsAll.getDouble(1, Long.valueOf(i), offsetAll);
-                double mape = Math.abs(predict[i] - label) / label * 100;
-                mapeAll += mape;
-
-                crossValidationService.saveCrossValidationDetail(crossValidationResultDto, i, mape, label, predict[i]);
-            }
-            mapeSum += mapeAll / experimentDto.getNumOutputs();
-            count++;
-            log.info("Average MAPE for test {} inputs: {}", offsetAll, mapeAll / experimentDto.getNumOutputs());
-        }
-
-        return mapeSum/count;
-    }
-
-    @Override
-    public void test(int offset) {
-        INDArray testFeatures = getTestFeatures();
-        inputPreparationService.setLength(experimentDto.getNumInputs());
-
-        // preparing input vector with history data of NUM_INPUTS hours
-        for (int i = 0; i< experimentDto.getNumInputs(); i++) {
-            inputPreparationService.push(testFeatures.getDouble(Long.valueOf(i)+offset));
-        }
-
-        INDArray testLabels = getTestLabels();
-        double mape = 0.0;
-        log.info("-------------");
-        for (int i = 0; i< experimentDto.getNumInputs(); i++) {
-            double predict = predict(inputPreparationService.getInputData())[0];
-            double label = testLabels.getDouble(Long.valueOf(i)+offset);
-            mape += Math.abs(predict-label)/label*100;
-            log.info("Hour " + i + " :" + predict + ",  " + label + ", MAPE=" + Math.abs(predict - label) / label * 100);
-            inputPreparationService.push(predict);
-        }
-        log.info("-------------");
-        log.info("Average MAPE for test inputs: " + mape / experimentDto.getNumHour());
-    }
-
-    @Override
-    public void trainNetwork(int epoch) {
-        setEpoch(epoch);
-        trainNetwork();
     }
 
     @Override
@@ -204,8 +110,7 @@ public class LstmNetImpl implements LstmNet {
         batchSize = configRecord.getBatchSize();
     }
 
-    @Override
-    public MultiLayerConfiguration getLstmNetworkConfiguration() {
+    private MultiLayerConfiguration getLstmNetworkConfiguration() {
         NeuralNetConfiguration.Builder builder = new NeuralNetConfiguration.Builder();
         builder.seed(123);
         builder.biasInit(0);
@@ -243,15 +148,12 @@ public class LstmNetImpl implements LstmNet {
 
     @Override
     public void initNetwork() {
-        net = new MultiLayerNetwork(this.getLstmNetworkConfiguration());
+        net = new MultiLayerNetwork(getLstmNetworkConfiguration());
         net.init();
     }
 
     @Override
-    public double calculateTestAvgMape() {
-//        net.rnnClearPreviousState();
-//        INDArray outputVal = net.rnnTimeStep(testData.getFeatures());
-//        return getMape(testData, outputVal, normalizer);
+    public Double calculateTestAvgMape() {
 
         net.rnnClearPreviousState();
         INDArray outputVal = net.rnnTimeStep(testData.getFeatures());
@@ -281,9 +183,9 @@ public class LstmNetImpl implements LstmNet {
 
     @Override
     public void trainNetwork() {
-        double currentMape=10000;
+        double currentMape=0;
 
-        for (int ep = 0; ep < this.epoch; ep++) {
+        for (int ep = 0; ep < epoch; ep++) {
             net.fit(trainingData);
             net.rnnClearPreviousState();
 
@@ -293,12 +195,15 @@ public class LstmNetImpl implements LstmNet {
 
             INDArray outputVal = net.rnnTimeStep(validationData.getFeatures());
             double mapeVal = getMape(validationData, outputVal, normalizer);
-            //double mapeVal = calculateAvgMapeForValidatingDataSet();
 
             experimentResultService.saveValidationResult(experimentDto, ep, mapeVal);
 
+            if (ep==0) {
+                currentMape = mapeVal;
+            }
+
             if (mapeVal<currentMape*0.997) {
-                this.save(modelFileName);
+                save(modelFileName);
                 currentMape = mapeVal;
             }
             log.info("Epoch: " + ep + ", MIN MAPE: " + currentMape + " MAPE: " + mapeVal);
@@ -306,10 +211,7 @@ public class LstmNetImpl implements LstmNet {
 
     }
 
-    public void trainNetworkEarlyStopping() {
-        throw new UnsupportedOperationException();
-    }
-
+    @Override
     public double[] predict(double[] inputArray) {
         INDArray input = Nd4j.create(inputArray, new int[]{1, experimentDto.getNumInputs()});
         normalizer.transform(input);
@@ -321,7 +223,7 @@ public class LstmNetImpl implements LstmNet {
         return result;
     }
 
-    public double  getMape(DataSet testData, INDArray predicted, DataNormalization normalizer) {
+    private double  getMape(DataSet testData, INDArray predicted, DataNormalization normalizer) {
         double res = 0.0;
         DataSet copy = testData.copy();
         INDArray lables = copy.getLabels();
@@ -336,7 +238,8 @@ public class LstmNetImpl implements LstmNet {
         return res;
     }
 
-    public boolean loadData() {
+    @Override
+    public Boolean loadData() {
 
         DataSetIterator iteratorTraining;
         DataSetIterator iteratorVerifying;
@@ -416,22 +319,17 @@ public class LstmNetImpl implements LstmNet {
         normalizer.transform(validationData);
         normalizer.transform(testData);
 
-        validateFeaturesAll = getValidationFeatures();
-        validateLabelsAll = getValidationLabels();
         return true;
     }
 
+    @Override
     public void loadLastState() {
         log.info("Model FileName: " + modelFileName);
-        try {
-            load(modelFileName);
-        } catch (IOException e) {
-            log.error(e.getMessage());
-        }
-
+        load(modelFileName);
     }
 
-    public void load(String filename) throws IOException {
+    @Override
+    public void load(String filename) {
         try {
             net = ModelSerializer.restoreMultiLayerNetwork(new File(MODEL_PATH + filename));
         } catch (Exception e) {
@@ -439,6 +337,7 @@ public class LstmNetImpl implements LstmNet {
         }
     }
 
+    @Override
     public void save(String filename) {
         try {
             ModelSerializer.writeModel(net, new File(MODEL_PATH + filename), true);
@@ -447,72 +346,14 @@ public class LstmNetImpl implements LstmNet {
         }
     }
 
-    public double getCurrentMape() {
-        INDArray output = net.rnnTimeStep(testData.getFeatures());
-        return getMape(testData, output, normalizer);
-    }
-
-    public DataSet getTrainingData() {
-        return trainingData;
-    }
-
-    public DataSet getTestData() {
-        DataSet copy = testData.copy();
-        INDArray lables = copy.getLabels();
-        INDArray features = copy.getFeatures();
-        normalizer.revertFeatures(features);
-        normalizer.revertLabels(lables);
-        return testData;
-    }
-
-    private INDArray getTrainingFeatures() {
-        DataSet copy = trainingData.copy();
-        INDArray features = copy.getFeatures();
-        normalizer.revertFeatures(features);
-        return features;
-    }
-
-    private INDArray getTrainingLabels() {
-        DataSet copy = trainingData.copy();
-        INDArray lables = copy.getLabels();
-        normalizer.revertLabels(lables);
-        return lables;
-    }
-
-    private INDArray getTestFeatures() {
-        DataSet copy = testData.copy();
-        INDArray features = copy.getFeatures();
-        normalizer.revertFeatures(features);
-        return features;
-    }
-
-    private INDArray getTestLabels() {
-        DataSet copy = testData.copy();
-        INDArray lables = copy.getLabels();
-        normalizer.revertLabels(lables);
-        return lables;
-    }
-
-    private INDArray getValidationFeatures() {
-        DataSet copy = validationData.copy();
-        INDArray features = copy.getFeatures();
-        normalizer.revertFeatures(features);
-        return features;
-    }
-
-    private INDArray getValidationLabels() {
-        DataSet copy = validationData.copy();
-        INDArray lables = copy.getLabels();
-        normalizer.revertLabels(lables);
-        return lables;
-    }
-
-    public int getEpoch() {
+    @Override
+    public Integer getEpoch() {
         return epoch;
     }
+
+    @Override
     public void setEpoch(int epoch) {
         this.epoch = epoch;
     }
-
 
 }

@@ -23,11 +23,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 @RunWith(SpringRunner.class)
-//@DataJpaTest
-//@ContextConfiguration(classes = {TestContext.class})
-//@EnableJpaRepositories(basePackages="com.vurosevic.dasis.persistence.repository", entityManagerFactoryRef="entityManagerFactory")
-//@EntityScan("com.vurosevic.dasis.persistence.model")
-//@AutoConfigureTestDatabase(replace= AutoConfigureTestDatabase.Replace.NONE)
 public class DataPreparationServiceImplTest {
 
     private DataPreparationServiceImpl dataPreparationService;
@@ -84,7 +79,7 @@ public class DataPreparationServiceImplTest {
     @Test
     public void getCsvFileNameAllDataSet() {
 
-        final String CSV_FILE_NAME = START_PATH + "PROJECT_HU_LSTM_FULL_DATA_SET_50_24_24.CSV";
+        String CSV_FILE_NAME = START_PATH + "PROJECT-HU-LSTM-FULL-DATA-SET-50-24-24_0.CSV";
         String result = dataPreparationService.getCsvFileNameAllDataSet(experiment);
         assertEquals(CSV_FILE_NAME, result);
 
@@ -93,7 +88,7 @@ public class DataPreparationServiceImplTest {
     @Test
     public void getCsvFileNameTrainigDataSet() {
 
-        final String CSV_FILE_NAME = START_PATH + "FEATURE_PROJECT_HU_LSTM_TRAINING_DATA_SET_50_24_24.CSV";
+        String CSV_FILE_NAME = START_PATH + "featureHUTrainingDataSet-50-24-24_0.csv";
         String result = dataPreparationService.getCsvFileNameTrainigDataSet(experiment, FEATURE.getPrefix());
         assertEquals(CSV_FILE_NAME, result);
 
@@ -102,7 +97,7 @@ public class DataPreparationServiceImplTest {
     @Test
     public void getCsvFileNameValidationDataSet() {
 
-        final String CSV_FILE_NAME = START_PATH + "LABEL_PROJECT_HU_LSTM_VALIDATION_DATA_SET_50_24_24.CSV";
+        String CSV_FILE_NAME = START_PATH + "labelHUValidationDataSet-50-24-24_0.csv";
         String result = dataPreparationService.getCsvFileNameValidationDataSet(experiment, LABEL.getPrefix());
         assertEquals(CSV_FILE_NAME, result);
 
@@ -111,7 +106,7 @@ public class DataPreparationServiceImplTest {
     @Test
     public void getCsvFileNameTestDataSet() {
 
-        final String CSV_FILE_NAME = START_PATH + "LABEL_PROJECT_HU_LSTM_TEST_DATA_SET_50_24_24.CSV";
+        String CSV_FILE_NAME = START_PATH + "labelHUTestDataSet-50-24-24_0.csv";
         String result = dataPreparationService.getCsvFileNameTestDataSet(experiment, LABEL.getPrefix());
 
         assertEquals(CSV_FILE_NAME, result);

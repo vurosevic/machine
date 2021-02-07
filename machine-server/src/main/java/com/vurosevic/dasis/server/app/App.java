@@ -1,13 +1,10 @@
 package com.vurosevic.dasis.server.app;
 
 import com.vurosevic.dasis.app.dto.ExperimentDto;
-import com.vurosevic.dasis.app.service.DataPreparationService;
-import com.vurosevic.dasis.nn.lstmnet.service.ExperimentService;
-import com.vurosevic.dasis.nn.lstmnet.LstmNet;
 import com.vurosevic.dasis.nn.lstmnet.config.ConfigRecord;
+import com.vurosevic.dasis.nn.lstmnet.service.ExperimentService;
 import com.vurosevic.dasis.persistence.model.Experiment;
 import com.vurosevic.dasis.persistence.repository.ExperimentRepository;
-import com.vurosevic.dasis.persistence.repository.LoadEntsoeRepository;
 import lombok.extern.slf4j.Slf4j;
 import ma.glasnost.orika.MapperFacade;
 import ma.glasnost.orika.MapperFactory;
@@ -32,40 +29,36 @@ import java.util.List;
 public class App implements CommandLineRunner {
 
     @Autowired
-    LoadEntsoeRepository loadEntsoeRepository;
+    private ExperimentRepository experimentRepository;
 
     @Autowired
-    ExperimentRepository experimentRepository;
+    private ExperimentService experimentService;
 
-    @Autowired
-    DataPreparationService dataPreparationService;
-
-    @Autowired
-    LstmNet lstmNet;
-
-    @Autowired
-    ExperimentService experimentService;
+    private static final Long PROJECT_ID = 27L;
 
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
 
-        log.info("RUNNING EXPERIMENTS");
+        log.info("*******************************************");
+        log.info("* Short-Term forecast using LSTM Networks *");
+        log.info("* by Sliding window method                *");
+        log.info("*-----------------------------------------*");
+        log.info("* Phd student Vladimir Urosevic           *");
+        log.info("*******************************************");
+
+        log.info("RUNNING PROJECT - " + PROJECT_ID);
 
         MapperFactory mapperFactory = new DefaultMapperFactory.Builder().build();
         MapperFacade orikaMapperFacade = mapperFactory.getMapperFacade();
 
-        List<Experiment> experiments = experimentRepository.findByProjectId(10L); // 10 - 15
+        List<Experiment> experiments = experimentRepository.findByProjectId(PROJECT_ID);
         List<ExperimentDto> experimentDtos = orikaMapperFacade.mapAsList(experiments, ExperimentDto.class);
 
         for (ExperimentDto experimentDto : experimentDtos) {
-            log.info("------------------------------------------------------------");
-
-            if (experimentDto.getId() >= 392) {
-
                 ConfigRecord configRecord = ConfigRecord.builder()
                         .batchSize(1)
                         .learningRate(0.0015)
@@ -76,41 +69,7 @@ public class App implements CommandLineRunner {
                 log.info("MODEL START : {}_{}",experimentDto.getModel().getNameModel(), experimentDto.getId());
                 experimentService.runExperiment(experimentDto, configRecord);
                 log.info("MODEL DONE : {}_{}",experimentDto.getModel().getNameModel(), experimentDto.getId());
-
-            }
-
-            log.info("------------------------------------------------------------");
         }
-
-//        lstmNet.setConfig(configRecord);
-//        lstmNet.setExperimentDto(experimentDtos.get(26));
-//
-//        dataPreparationService.makeCsvFiles(experimentDtos.get(26));
-//        log.info("CSV files are created.");
-//
-////        lstmNet.initNetwork();
-////        log.info("LSTM is initialized.");
-////
-////        lstmNet.loadData();
-////        log.info("Data is loaded.");
-////
-////        lstmNet.trainNetwork();
-////        log.info("LSTM is trained." );
-//
-////        lstmNet.load("D:\\machine\\models\\CZ_MODEL_27.lstm");
-////        log.info("Model is loaded." );
-////
-//        lstmNet.initNetwork();
-//        log.info("LSTM is initialized.");
-//
-//        lstmNet.loadData();
-//        log.info("Data is loaded.");
-//
-//        lstmNet.loadLastState();
-//
-//        //Double mape = lstmNet.calculateAvgMape();
-//
-//        log.info("AvgMape for testDataset is: {}", lstmNet.calculateTestAvgMape());
 
         log.info("END.");
     }
